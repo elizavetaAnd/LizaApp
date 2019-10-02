@@ -62,7 +62,7 @@ namespace LizaApp
                                             int buffer = matr[m, i];
                                             matr[m, i] = matr[m, j];
                                             matr[m, j] = buffer;
-                                            //rwtgrewt
+                                            
                                         }
 
                                     }
