@@ -73,7 +73,7 @@ namespace LizaApp
                             matrOutput(matr, rowCount, columnsCount);
 
                             //Считаем сумму, если в столбце есть хотя бы 1 отрицательный элемиент
-                            bool[] sumIsHasOtr = new bool[rowCount];
+                            bool[] sumNegatveNum = new bool[rowCount];
                             for (int i = 0; i < columnsCount; i++)
                             {
                                 for (int j = 0; j < rowCount; j++)
@@ -81,7 +81,7 @@ namespace LizaApp
                                     
                                     if (matr[j, i] < 0)
                                     {
-                                        sumIsHasOtr[j] = true;
+                                        sumNegatveNum[j] = true;
                                     }
                                 }
                             }
@@ -91,7 +91,7 @@ namespace LizaApp
                             {
                                 for (int j = 0; j < columnsCount; j++)
                                 {
-                                    if (sumIsHasOtr[j] == true)
+                                    if (sumNegatveNum[j] == true)
                                     {
                                        
                                         sum2[j] += matr[i, j];
